@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1403944377">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1403944377" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1403944377" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1403944377." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.144469516" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1825405135" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32L476VGTx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.1024602406" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32L476G-DISCO" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.655116811" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.923943800" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.445572601" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/STM32L476G-Disco}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.904030806" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1667168671" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.375431432" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.c.compiler.option.debugging.level.393492766" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1978050455" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/CMSIS/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/CMSIS/device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/hx8347g}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/lsm303c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1620098331" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32L476VGTx"/>
+									<listOptionValue builtIn="false" value="STM32L4"/>
+									<listOptionValue builtIn="false" value="STM32L476G_DISCO"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32L476xx"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.628817544" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.2125781500" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1700320724" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.548277280" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1972387805" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1459185991" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+								<option id="gnu.c.link.option.paths.913882946" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Debug}&quot;"/>
+								</option>
+								<option id="gnu.c.link.option.libs.282713074" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="stm32l476g-disco_hal_lib"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1628202040" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1127764834" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1396498595" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.514956718" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.342641483" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/CMSIS/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/CMSIS/device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/hx8347g}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/lsm303c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.575789434" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1919771919" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="stm32l476g-disco_hal_lib;fr.ac6.managedbuild.config.gnu.cross.lib.debug.1220004013" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/stm32l476g-disco_hal_lib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/stm32l476g-disco_hal_lib/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="stm32l476g-disco_hal_lib" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.1041521000">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.1041521000" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.1041521000" name="Release" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.1041521000." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.1677800763" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.345234043" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32L476VGTx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.958835759" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32L476G-DISCO" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1981841592" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.2106404194" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1202383663" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/STM32L476G-Disco}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.1711549999" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1489651689" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.1706546275" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.148290473" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.376078084" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/CMSIS/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/CMSIS/device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/hx8347g}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/lsm303c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.78622254" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32L476VGTx"/>
+									<listOptionValue builtIn="false" value="STM32L4"/>
+									<listOptionValue builtIn="false" value="STM32L476G_DISCO"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32L476xx"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.330113408" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.460408778" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1022091177" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.319292004" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1892062114" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.60054249" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+								<option id="gnu.c.link.option.paths.578182953" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Release}&quot;"/>
+								</option>
+								<option id="gnu.c.link.option.libs.583355270" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="stm32l476g-disco_hal_lib"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.768064865" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1660587809" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.421363064" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.240362766" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.1594836227" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/CMSIS/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/CMSIS/device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/hx8347g}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/lsm303c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1397973" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1403771210" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="stm32l476g-disco_hal_lib;fr.ac6.managedbuild.config.gnu.cross.lib.release.30709710" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/stm32l476g-disco_hal_lib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/stm32l476g-disco_hal_lib/Release"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="stm32l476g-disco_hal_lib" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="STM32L476G-Disco.fr.ac6.managedbuild.target.gnu.cross.exe.1453927284" name="Executable" projectType="fr.ac6.managedbuild.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1403944377;fr.ac6.managedbuild.config.gnu.cross.exe.debug.1403944377.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1667168671;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.628817544">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.1041521000;fr.ac6.managedbuild.config.gnu.cross.exe.release.1041521000.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1489651689;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.330113408">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>
