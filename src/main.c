@@ -12,7 +12,12 @@
 #include "stm32l4xx.h"
 #include "stm32l476g_discovery.h"
 #include "stm32l476g_discovery_glass_lcd.h"
+
+#include "temp_function.h"
 			
+
+
+
 void startup_init(void)
 {
 	SysTick_Config(HAL_RCC_GetHCLKFreq()/1000);
@@ -25,15 +30,19 @@ void startup_init(void)
 }
 
 
-
-
 int main(void)
 {
 	startup_init();
 
 	BSP_LCD_GLASS_DisplayString("PRIVET");
-
 	BSP_LCD_GLASS_BarLevelConfig(BATTERYLEVEL_1_2);
+
+
+
+	BATTERY_DETECTION_GPIO_CLK_ENABLE();
+
+
+
 
 	while(1)
 	{

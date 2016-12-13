@@ -1,4 +1,5 @@
-src/main.o: ../src/main.c \
+src/temp_function.o: ../src/temp_function.c \
+ D:/work/projects/eclipse_projects/STM32L476G-Disco/inc/temp_function.h \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/CMSIS/device/stm32l4xx.h \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/CMSIS/device/stm32l476xx.h \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/CMSIS/core/core_cm4.h \
@@ -73,8 +74,9 @@ src/main.o: ../src/main.c \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l4xx_hal_hcd.h \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery_glass_lcd.h \
- D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h \
- D:/work/projects/eclipse_projects/STM32L476G-Disco/inc/temp_function.h
+ D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h
+
+D:/work/projects/eclipse_projects/STM32L476G-Disco/inc/temp_function.h:
 
 D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/CMSIS/device/stm32l4xx.h:
 
@@ -225,5 +227,3 @@ D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-
 D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery_glass_lcd.h:
 
 D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h:
-
-D:/work/projects/eclipse_projects/STM32L476G-Disco/inc/temp_function.h:

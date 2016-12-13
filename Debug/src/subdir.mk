@@ -4,25 +4,31 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/batterymeasure.c \
 ../src/joystick.c \
 ../src/main.c \
 ../src/stm32l4xx_it.c \
 ../src/syscalls.c \
-../src/system_stm32l4xx.c 
+../src/system_stm32l4xx.c \
+../src/temp_function.c 
 
 OBJS += \
+./src/batterymeasure.o \
 ./src/joystick.o \
 ./src/main.o \
 ./src/stm32l4xx_it.o \
 ./src/syscalls.o \
-./src/system_stm32l4xx.o 
+./src/system_stm32l4xx.o \
+./src/temp_function.o 
 
 C_DEPS += \
+./src/batterymeasure.d \
 ./src/joystick.d \
 ./src/main.d \
 ./src/stm32l4xx_it.d \
 ./src/syscalls.d \
-./src/system_stm32l4xx.d 
+./src/system_stm32l4xx.d \
+./src/temp_function.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
