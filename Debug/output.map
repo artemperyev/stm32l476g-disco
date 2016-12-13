@@ -10,8 +10,12 @@ D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-d
                               src/main.o (HAL_RCC_GetHCLKFreq)
 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
                               src/main.o (BSP_LED_Init)
+D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                              src/main.o (BSP_LCD_GLASS_Init)
 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_i2c.o)
                               D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o) (HAL_I2C_Init)
+D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+                              D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o) (HAL_LCD_Init)
 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
                               D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o) (HAL_PWREx_GetVoltageRange)
 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
@@ -44,7 +48,9 @@ c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.
 Allocating common symbols
 Common symbol       size              file
 
+Digit               0x10              D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
 uwTick              0x4               D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+LCDHandle           0x3c              D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
 
 Discarded input sections
 
@@ -59,6 +65,7 @@ Discarded input sections
  .ARM.exidx     0x00000000        0x8 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
  .ARM.attributes
                 0x00000000       0x20 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
+ .group         0x00000000        0x8 src/joystick.o
  .group         0x00000000        0x8 src/joystick.o
  .group         0x00000000        0x8 src/joystick.o
  .group         0x00000000        0x8 src/joystick.o
@@ -259,6 +266,7 @@ Discarded input sections
  .group         0x00000000        0x8 src/main.o
  .group         0x00000000        0x8 src/main.o
  .group         0x00000000        0x8 src/main.o
+ .group         0x00000000        0x8 src/main.o
  .text          0x00000000        0x0 src/main.o
  .data          0x00000000        0x0 src/main.o
  .bss           0x00000000        0x0 src/main.o
@@ -359,6 +367,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xa5 src/main.o
  .debug_macro   0x00000000       0x68 src/main.o
  .debug_macro   0x00000000      0x31d src/main.o
+ .debug_macro   0x00000000      0x7c1 src/main.o
  .group         0x00000000        0x8 src/stm32l4xx_it.o
  .group         0x00000000        0x8 src/stm32l4xx_it.o
  .group         0x00000000        0x8 src/stm32l4xx_it.o
@@ -772,7 +781,6 @@ Discarded input sections
  .group         0x00000000        0x8 src/system_stm32l4xx.o
  .text          0x00000000        0x0 src/system_stm32l4xx.o
  .bss           0x00000000        0x0 src/system_stm32l4xx.o
- .rodata        0x00000000       0x48 src/system_stm32l4xx.o
  .text.SystemCoreClockUpdate
                 0x00000000      0x174 src/system_stm32l4xx.o
  .debug_macro   0x00000000      0x8aa src/system_stm32l4xx.o
@@ -983,12 +991,6 @@ Discarded input sections
                 0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
  .text.HAL_MspDeInit
                 0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
- .text.HAL_InitTick
-                0x00000000       0x38 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
- .text.HAL_GetTick
-                0x00000000       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
- .text.HAL_Delay
-                0x00000000       0x2c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
  .text.HAL_SuspendTick
                 0x00000000       0x20 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
  .text.HAL_ResumeTick
@@ -1245,16 +1247,12 @@ Discarded input sections
                 0x00000000       0x6c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.NVIC_SystemReset
                 0x00000000       0x28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
- .text.SysTick_Config
-                0x00000000       0x44 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.HAL_NVIC_SetPriorityGrouping
                 0x00000000       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.HAL_NVIC_DisableIRQ
                 0x00000000       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.HAL_NVIC_SystemReset
                 0x00000000        0xc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
- .text.HAL_SYSTICK_Config
-                0x00000000       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.HAL_NVIC_GetPriorityGrouping
                 0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.HAL_NVIC_GetPriority
@@ -1472,6 +1470,8 @@ Discarded input sections
                 0x00000000      0x1f0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
  .text.HAL_GPIO_ReadPin
                 0x00000000       0x30 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+ .text.HAL_GPIO_TogglePin
+                0x00000000       0x24 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
  .text.HAL_GPIO_LockPin
                 0x00000000       0x50 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
  .text.HAL_GPIO_EXTI_Callback
@@ -1675,14 +1675,10 @@ Discarded input sections
  .bss           0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .text.HAL_RCC_DeInit
                 0x00000000       0xac D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
- .text.HAL_RCC_OscConfig
-                0x00000000      0x70c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .text.HAL_RCC_ClockConfig
                 0x00000000      0x244 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .text.HAL_RCC_MCOConfig
                 0x00000000       0x68 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
- .text.HAL_RCC_GetSysClockFreq
-                0x00000000      0x1f4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .text.HAL_RCC_GetPCLK1Freq
                 0x00000000       0x44 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .text.HAL_RCC_GetPCLK2Freq
@@ -1697,8 +1693,6 @@ Discarded input sections
                 0x00000000       0x24 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .text.HAL_RCC_CSSCallback
                 0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
- .text.RCC_SetFlashLatencyFromMSIRange
-                0x00000000       0xc4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .debug_macro   0x00000000      0x8a4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .debug_macro   0x00000000      0x166 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .debug_macro   0x00000000       0x28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
@@ -1907,6 +1901,8 @@ Discarded input sections
                 0x00000000       0x34 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
  .text.BSP_LED_Off
                 0x00000000       0x34 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .text.BSP_LED_Toggle
+                0x00000000       0x30 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
  .text.BSP_JOY_DeInit
                 0x00000000       0xe0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
  .text.BSP_JOY_GetState
@@ -2112,6 +2108,226 @@ Discarded input sections
  .debug_macro   0x00000000       0x68 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
  .debug_macro   0x00000000      0x31d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
  .debug_macro   0x00000000      0x456 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text          0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .bss           0x00000000        0x1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.BSP_LCD_GLASS_DeInit
+                0x00000000       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.BSP_LCD_GLASS_BlinkConfig
+                0x00000000       0x34 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.BSP_LCD_GLASS_Contrast
+                0x00000000       0x30 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.BSP_LCD_GLASS_DisplayBar
+                0x00000000       0xb8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.BSP_LCD_GLASS_ClearBar
+                0x00000000       0xb0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.BSP_LCD_GLASS_DisplayChar
+                0x00000000       0x38 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.BSP_LCD_GLASS_DisplayStrDeci
+                0x00000000       0xa0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.BSP_LCD_GLASS_ScrollSentence
+                0x00000000      0x164 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.LCD_MspDeInit
+                0x00000000       0xcc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x8a4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x166 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x22 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x87 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x44 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xfd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x5e D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x1df D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x35 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x50 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0xe66 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000    0x1a13b D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x43 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000     0x359e D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x52 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x35 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x9c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x16 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x97 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x30d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xfd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x52 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x1f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x43 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x20 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x187 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x52 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x40 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x40 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xd7 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x16 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x189 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x57 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000     0x1566 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x59e D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x148 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x18b D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x25d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x29c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x23a D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x401 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x5c1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x360 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x263 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xd5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x4d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x153 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xd9 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xad D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x367 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xe4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x305 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x71 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xb3 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x202 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x61 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x90 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x87 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x3e5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x272 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xff D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x126 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x3dc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x2a3 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x6d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x321 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x4ce D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xdd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x447 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x398 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x22b D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x34f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x2e2 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x14c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x9c6 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x1df D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x46a D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x535 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x44 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x241 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x31 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x256 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x248 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x12f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x89 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x1d1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0xa5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000       0x68 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x31d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x456 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x00000000      0x7c1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_i2c.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_i2c.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_i2c.o)
@@ -2467,6 +2683,211 @@ Discarded input sections
  .debug_frame   0x00000000      0xafc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_i2c.o)
  .ARM.attributes
                 0x00000000       0x39 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_i2c.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .text          0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .data          0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .bss           0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .text.HAL_LCD_DeInit
+                0x00000000       0x40 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .text.HAL_LCD_MspDeInit
+                0x00000000       0x14 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .text.HAL_LCD_GetState
+                0x00000000       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .text.HAL_LCD_GetError
+                0x00000000       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x8a4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x166 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x22 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x87 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x44 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xfd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x5e D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x1df D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x35 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x50 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0xe66 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000    0x1a13b D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x43 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000     0x359e D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x52 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x35 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x9c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x16 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x97 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x30d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xfd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x52 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x1f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x43 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x20 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x187 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x52 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x40 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x40 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xd7 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x16 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x189 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x57 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000     0x1566 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x59e D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x148 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x18b D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x25d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x29c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x23a D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x401 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x5c1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x360 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x263 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xd5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x4d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x153 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xd9 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xad D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x367 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xe4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x305 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x71 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xb3 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x202 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x61 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x90 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x87 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x3e5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x272 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xff D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x126 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x3dc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x2a3 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x6d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x321 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x4ce D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xdd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x447 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x398 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x22b D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x34f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x2e2 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x14c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x9c6 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x1df D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x46a D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x535 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x44 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x241 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x31 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x256 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x248 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x12f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x89 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x1d1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0xa5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000       0x68 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x00000000      0x31d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
@@ -2567,8 +2988,6 @@ Discarded input sections
  .text          0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .data          0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .bss           0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .text.HAL_PWREx_GetVoltageRange
-                0x00000000       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .text.HAL_PWREx_ControlVoltageScaling
                 0x00000000       0xa8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .text.HAL_PWREx_EnableBatteryCharging
@@ -2643,12 +3062,6 @@ Discarded input sections
                 0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .text.HAL_PWREx_PVM4Callback
                 0x00000000       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .debug_info    0x00000000      0x9fa D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .debug_abbrev  0x00000000      0x222 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .debug_aranges
-                0x00000000      0x148 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .debug_ranges  0x00000000      0x138 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .debug_macro   0x00000000      0x4e9 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .debug_macro   0x00000000      0x8a4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .debug_macro   0x00000000      0x166 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .debug_macro   0x00000000       0x28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
@@ -2746,12 +3159,6 @@ Discarded input sections
  .debug_macro   0x00000000       0xa5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .debug_macro   0x00000000       0x68 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .debug_macro   0x00000000      0x31d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .debug_line    0x00000000      0xf7a D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .debug_str     0x00000000   0x11d8cb D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .comment       0x00000000       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .debug_frame   0x00000000      0x524 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
- .ARM.attributes
-                0x00000000       0x39 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
@@ -2852,8 +3259,6 @@ Discarded input sections
  .text          0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .data          0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .bss           0x00000000        0x0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .text.HAL_RCCEx_PeriphCLKConfig
-                0x00000000      0x5c8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .text.HAL_RCCEx_GetPeriphCLKConfig
                 0x00000000      0x2a0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .text.HAL_RCCEx_GetPeriphCLKFreq
@@ -2888,16 +3293,6 @@ Discarded input sections
                 0x00000000       0x20 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .text.HAL_RCCEx_DisableMSIPLLMode
                 0x00000000       0x20 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .text.RCCEx_PLLSAI1_Config
-                0x00000000      0x2a8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .text.RCCEx_PLLSAI2_Config
-                0x00000000      0x250 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .debug_info    0x00000000     0x14bd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .debug_abbrev  0x00000000      0x265 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .debug_aranges
-                0x00000000       0xb8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .debug_ranges  0x00000000       0xa8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .debug_macro   0x00000000      0x4fb D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .debug_macro   0x00000000      0x8a4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .debug_macro   0x00000000      0x166 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .debug_macro   0x00000000       0x28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
@@ -2995,12 +3390,6 @@ Discarded input sections
  .debug_macro   0x00000000       0xa5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .debug_macro   0x00000000       0x68 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .debug_macro   0x00000000      0x31d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .debug_line    0x00000000     0x140b D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .debug_str     0x00000000   0x11daff D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .comment       0x00000000       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .debug_frame   0x00000000      0x2dc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
- .ARM.attributes
-                0x00000000       0x39 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_spi.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_spi.o)
  .group         0x00000000        0x8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_spi.o)
@@ -3831,10 +4220,6 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
  .data          0x00000000        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
  .bss           0x00000000        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
- .text.memset   0x00000000       0x9c c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
- .debug_frame   0x00000000       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
- .ARM.attributes
-                0x00000000       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
  .text          0x00000000        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
  .data          0x00000000        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
  .bss           0x00000000        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
@@ -3897,283 +4282,358 @@ LOAD c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.
                 0x08000000                g_pfnVectors
                 0x08000188                . = ALIGN (0x8)
 
-.text           0x08000188      0xbb8
+.text           0x08000188     0x3168
                 0x08000188                . = ALIGN (0x8)
  *(.text)
  .text          0x08000188       0x5c c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
  *(.text*)
  .text.HAL_GPIO_EXTI_Callback
-                0x080001e4       0x54 src/joystick.o
+                0x080001e4       0x78 src/joystick.o
                 0x080001e4                HAL_GPIO_EXTI_Callback
  .text.NVIC_SetPriority
-                0x08000238       0x54 src/main.o
+                0x0800025c       0x54 src/main.o
  .text.SysTick_Config
-                0x0800028c       0x44 src/main.o
+                0x080002b0       0x44 src/main.o
  .text.startup_init
-                0x080002d0       0x34 src/main.o
-                0x080002d0                startup_init
- .text.main     0x08000304        0xc src/main.o
-                0x08000304                main
+                0x080002f4       0x38 src/main.o
+                0x080002f4                startup_init
+ .text.main     0x0800032c       0x1c src/main.o
+                0x0800032c                main
  .text.SysTick_Handler
-                0x08000310       0x10 src/stm32l4xx_it.o
-                0x08000310                SysTick_Handler
+                0x08000348       0x10 src/stm32l4xx_it.o
+                0x08000348                SysTick_Handler
  .text.EXTI0_IRQHandler
-                0x08000320       0x10 src/stm32l4xx_it.o
-                0x08000320                EXTI0_IRQHandler
+                0x08000358       0x10 src/stm32l4xx_it.o
+                0x08000358                EXTI0_IRQHandler
  .text.EXTI1_IRQHandler
-                0x08000330       0x10 src/stm32l4xx_it.o
-                0x08000330                EXTI1_IRQHandler
+                0x08000368       0x10 src/stm32l4xx_it.o
+                0x08000368                EXTI1_IRQHandler
  .text.EXTI2_IRQHandler
-                0x08000340       0x10 src/stm32l4xx_it.o
-                0x08000340                EXTI2_IRQHandler
+                0x08000378       0x10 src/stm32l4xx_it.o
+                0x08000378                EXTI2_IRQHandler
  .text.EXTI3_IRQHandler
-                0x08000350       0x10 src/stm32l4xx_it.o
-                0x08000350                EXTI3_IRQHandler
+                0x08000388       0x10 src/stm32l4xx_it.o
+                0x08000388                EXTI3_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x08000360       0x10 src/stm32l4xx_it.o
-                0x08000360                EXTI9_5_IRQHandler
+                0x08000398       0x10 src/stm32l4xx_it.o
+                0x08000398                EXTI9_5_IRQHandler
  .text.SystemInit
-                0x08000370       0x6c src/system_stm32l4xx.o
-                0x08000370                SystemInit
+                0x080003a8       0x6c src/system_stm32l4xx.o
+                0x080003a8                SystemInit
  .text.Reset_Handler
-                0x080003dc       0x50 startup/startup_stm32l476xx.o
-                0x080003dc                Reset_Handler
+                0x08000414       0x50 startup/startup_stm32l476xx.o
+                0x08000414                Reset_Handler
  .text.Default_Handler
-                0x0800042c        0x2 startup/startup_stm32l476xx.o
-                0x0800042c                RTC_Alarm_IRQHandler
-                0x0800042c                TIM8_TRG_COM_IRQHandler
-                0x0800042c                TIM8_CC_IRQHandler
-                0x0800042c                DebugMon_Handler
-                0x0800042c                TIM1_CC_IRQHandler
-                0x0800042c                TSC_IRQHandler
-                0x0800042c                HardFault_Handler
-                0x0800042c                TAMP_STAMP_IRQHandler
-                0x0800042c                PendSV_Handler
-                0x0800042c                NMI_Handler
-                0x0800042c                LPTIM2_IRQHandler
-                0x0800042c                DFSDM1_FLT1_IRQHandler
-                0x0800042c                I2C3_ER_IRQHandler
-                0x0800042c                DFSDM1_FLT2_IRQHandler
-                0x0800042c                I2C2_EV_IRQHandler
-                0x0800042c                CAN1_RX0_IRQHandler
-                0x0800042c                FPU_IRQHandler
-                0x0800042c                TIM1_UP_TIM16_IRQHandler
-                0x0800042c                UsageFault_Handler
-                0x0800042c                ADC1_2_IRQHandler
-                0x0800042c                SPI1_IRQHandler
-                0x0800042c                TIM6_DAC_IRQHandler
-                0x0800042c                TIM8_UP_IRQHandler
-                0x0800042c                DMA2_Channel2_IRQHandler
-                0x0800042c                DMA1_Channel4_IRQHandler
-                0x0800042c                SAI2_IRQHandler
-                0x0800042c                DFSDM1_FLT3_IRQHandler
-                0x0800042c                USART3_IRQHandler
-                0x0800042c                DMA1_Channel7_IRQHandler
-                0x0800042c                CAN1_RX1_IRQHandler
-                0x0800042c                LCD_IRQHandler
-                0x0800042c                UART5_IRQHandler
-                0x0800042c                ADC3_IRQHandler
-                0x0800042c                TIM4_IRQHandler
-                0x0800042c                DMA2_Channel1_IRQHandler
-                0x0800042c                QUADSPI_IRQHandler
-                0x0800042c                I2C1_EV_IRQHandler
-                0x0800042c                DMA1_Channel6_IRQHandler
-                0x0800042c                UART4_IRQHandler
-                0x0800042c                DMA2_Channel4_IRQHandler
-                0x0800042c                TIM3_IRQHandler
-                0x0800042c                RCC_IRQHandler
-                0x0800042c                DMA1_Channel1_IRQHandler
-                0x0800042c                Default_Handler
-                0x0800042c                DMA2_Channel7_IRQHandler
-                0x0800042c                EXTI15_10_IRQHandler
-                0x0800042c                TIM7_IRQHandler
-                0x0800042c                SDMMC1_IRQHandler
-                0x0800042c                TIM5_IRQHandler
-                0x0800042c                I2C3_EV_IRQHandler
-                0x0800042c                RTC_WKUP_IRQHandler
-                0x0800042c                PVD_PVM_IRQHandler
-                0x0800042c                SPI2_IRQHandler
-                0x0800042c                MemManage_Handler
-                0x0800042c                CAN1_TX_IRQHandler
-                0x0800042c                SVC_Handler
-                0x0800042c                DMA2_Channel5_IRQHandler
-                0x0800042c                DMA1_Channel5_IRQHandler
-                0x0800042c                EXTI4_IRQHandler
-                0x0800042c                RNG_IRQHandler
-                0x0800042c                TIM1_TRG_COM_TIM17_IRQHandler
-                0x0800042c                DMA1_Channel3_IRQHandler
-                0x0800042c                COMP_IRQHandler
-                0x0800042c                WWDG_IRQHandler
-                0x0800042c                LPUART1_IRQHandler
-                0x0800042c                DMA2_Channel6_IRQHandler
-                0x0800042c                TIM2_IRQHandler
-                0x0800042c                USART2_IRQHandler
-                0x0800042c                DFSDM1_FLT0_IRQHandler
-                0x0800042c                I2C2_ER_IRQHandler
-                0x0800042c                DMA1_Channel2_IRQHandler
-                0x0800042c                TIM8_BRK_IRQHandler
-                0x0800042c                CAN1_SCE_IRQHandler
-                0x0800042c                FLASH_IRQHandler
-                0x0800042c                BusFault_Handler
-                0x0800042c                USART1_IRQHandler
-                0x0800042c                OTG_FS_IRQHandler
-                0x0800042c                SPI3_IRQHandler
-                0x0800042c                I2C1_ER_IRQHandler
-                0x0800042c                FMC_IRQHandler
-                0x0800042c                SWPMI1_IRQHandler
-                0x0800042c                LPTIM1_IRQHandler
-                0x0800042c                SAI1_IRQHandler
-                0x0800042c                DMA2_Channel3_IRQHandler
-                0x0800042c                TIM1_BRK_TIM15_IRQHandler
- *fill*         0x0800042e        0x2 
+                0x08000464        0x2 startup/startup_stm32l476xx.o
+                0x08000464                RTC_Alarm_IRQHandler
+                0x08000464                TIM8_TRG_COM_IRQHandler
+                0x08000464                TIM8_CC_IRQHandler
+                0x08000464                DebugMon_Handler
+                0x08000464                TIM1_CC_IRQHandler
+                0x08000464                TSC_IRQHandler
+                0x08000464                HardFault_Handler
+                0x08000464                TAMP_STAMP_IRQHandler
+                0x08000464                PendSV_Handler
+                0x08000464                NMI_Handler
+                0x08000464                LPTIM2_IRQHandler
+                0x08000464                DFSDM1_FLT1_IRQHandler
+                0x08000464                I2C3_ER_IRQHandler
+                0x08000464                DFSDM1_FLT2_IRQHandler
+                0x08000464                I2C2_EV_IRQHandler
+                0x08000464                CAN1_RX0_IRQHandler
+                0x08000464                FPU_IRQHandler
+                0x08000464                TIM1_UP_TIM16_IRQHandler
+                0x08000464                UsageFault_Handler
+                0x08000464                ADC1_2_IRQHandler
+                0x08000464                SPI1_IRQHandler
+                0x08000464                TIM6_DAC_IRQHandler
+                0x08000464                TIM8_UP_IRQHandler
+                0x08000464                DMA2_Channel2_IRQHandler
+                0x08000464                DMA1_Channel4_IRQHandler
+                0x08000464                SAI2_IRQHandler
+                0x08000464                DFSDM1_FLT3_IRQHandler
+                0x08000464                USART3_IRQHandler
+                0x08000464                DMA1_Channel7_IRQHandler
+                0x08000464                CAN1_RX1_IRQHandler
+                0x08000464                LCD_IRQHandler
+                0x08000464                UART5_IRQHandler
+                0x08000464                ADC3_IRQHandler
+                0x08000464                TIM4_IRQHandler
+                0x08000464                DMA2_Channel1_IRQHandler
+                0x08000464                QUADSPI_IRQHandler
+                0x08000464                I2C1_EV_IRQHandler
+                0x08000464                DMA1_Channel6_IRQHandler
+                0x08000464                UART4_IRQHandler
+                0x08000464                DMA2_Channel4_IRQHandler
+                0x08000464                TIM3_IRQHandler
+                0x08000464                RCC_IRQHandler
+                0x08000464                DMA1_Channel1_IRQHandler
+                0x08000464                Default_Handler
+                0x08000464                DMA2_Channel7_IRQHandler
+                0x08000464                EXTI15_10_IRQHandler
+                0x08000464                TIM7_IRQHandler
+                0x08000464                SDMMC1_IRQHandler
+                0x08000464                TIM5_IRQHandler
+                0x08000464                I2C3_EV_IRQHandler
+                0x08000464                RTC_WKUP_IRQHandler
+                0x08000464                PVD_PVM_IRQHandler
+                0x08000464                SPI2_IRQHandler
+                0x08000464                MemManage_Handler
+                0x08000464                CAN1_TX_IRQHandler
+                0x08000464                SVC_Handler
+                0x08000464                DMA2_Channel5_IRQHandler
+                0x08000464                DMA1_Channel5_IRQHandler
+                0x08000464                EXTI4_IRQHandler
+                0x08000464                RNG_IRQHandler
+                0x08000464                TIM1_TRG_COM_TIM17_IRQHandler
+                0x08000464                DMA1_Channel3_IRQHandler
+                0x08000464                COMP_IRQHandler
+                0x08000464                WWDG_IRQHandler
+                0x08000464                LPUART1_IRQHandler
+                0x08000464                DMA2_Channel6_IRQHandler
+                0x08000464                TIM2_IRQHandler
+                0x08000464                USART2_IRQHandler
+                0x08000464                DFSDM1_FLT0_IRQHandler
+                0x08000464                I2C2_ER_IRQHandler
+                0x08000464                DMA1_Channel2_IRQHandler
+                0x08000464                TIM8_BRK_IRQHandler
+                0x08000464                CAN1_SCE_IRQHandler
+                0x08000464                FLASH_IRQHandler
+                0x08000464                BusFault_Handler
+                0x08000464                USART1_IRQHandler
+                0x08000464                OTG_FS_IRQHandler
+                0x08000464                SPI3_IRQHandler
+                0x08000464                I2C1_ER_IRQHandler
+                0x08000464                FMC_IRQHandler
+                0x08000464                SWPMI1_IRQHandler
+                0x08000464                LPTIM1_IRQHandler
+                0x08000464                SAI1_IRQHandler
+                0x08000464                DMA2_Channel3_IRQHandler
+                0x08000464                TIM1_BRK_TIM15_IRQHandler
+ *fill*         0x08000466        0x2 
+ .text.HAL_InitTick
+                0x08000468       0x38 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+                0x08000468                HAL_InitTick
  .text.HAL_IncTick
-                0x08000430       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
-                0x08000430                HAL_IncTick
+                0x080004a0       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+                0x080004a0                HAL_IncTick
+ .text.HAL_GetTick
+                0x080004bc       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+                0x080004bc                HAL_GetTick
+ .text.HAL_Delay
+                0x080004d4       0x2c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+                0x080004d4                HAL_Delay
  .text.NVIC_GetPriorityGrouping
-                0x0800044c       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x08000500       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.NVIC_EnableIRQ
-                0x08000468       0x34 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x0800051c       0x34 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.NVIC_SetPriority
-                0x0800049c       0x54 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x08000550       0x54 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.NVIC_EncodePriority
-                0x080004f0       0x64 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x080005a4       0x64 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+ .text.SysTick_Config
+                0x08000608       0x44 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
  .text.HAL_NVIC_SetPriority
-                0x08000554       0x38 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
-                0x08000554                HAL_NVIC_SetPriority
+                0x0800064c       0x38 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x0800064c                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0800058c       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
-                0x0800058c                HAL_NVIC_EnableIRQ
+                0x08000684       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x08000684                HAL_NVIC_EnableIRQ
+ .text.HAL_SYSTICK_Config
+                0x080006a0       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x080006a0                HAL_SYSTICK_Config
  .text.HAL_SYSTICK_IRQHandler
-                0x080005a8        0xc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
-                0x080005a8                HAL_SYSTICK_IRQHandler
+                0x080006b8        0xc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x080006b8                HAL_SYSTICK_IRQHandler
  .text.HAL_SYSTICK_Callback
-                0x080005b4       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
-                0x080005b4                HAL_SYSTICK_Callback
+                0x080006c4       0x10 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+                0x080006c4                HAL_SYSTICK_Callback
  .text.HAL_GPIO_Init
-                0x080005c4      0x358 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
-                0x080005c4                HAL_GPIO_Init
+                0x080006d4      0x358 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+                0x080006d4                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x0800091c       0x30 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
-                0x0800091c                HAL_GPIO_WritePin
- .text.HAL_GPIO_TogglePin
-                0x0800094c       0x24 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
-                0x0800094c                HAL_GPIO_TogglePin
+                0x08000a2c       0x30 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+                0x08000a2c                HAL_GPIO_WritePin
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x08000970       0x30 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
-                0x08000970                HAL_GPIO_EXTI_IRQHandler
+                0x08000a5c       0x30 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+                0x08000a5c                HAL_GPIO_EXTI_IRQHandler
+ .text.HAL_RCC_OscConfig
+                0x08000a8c      0x70c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
+                0x08000a8c                HAL_RCC_OscConfig
+ .text.HAL_RCC_GetSysClockFreq
+                0x08001198      0x1f4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
+                0x08001198                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x080009a0       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
-                0x080009a0                HAL_RCC_GetHCLKFreq
+                0x0800138c       0x18 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
+                0x0800138c                HAL_RCC_GetHCLKFreq
+ .text.RCC_SetFlashLatencyFromMSIRange
+                0x080013a4       0xc4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .text.BSP_LED_Init
-                0x080009b8       0x9c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
-                0x080009b8                BSP_LED_Init
- .text.BSP_LED_Toggle
-                0x08000a54       0x30 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
-                0x08000a54                BSP_LED_Toggle
+                0x08001468       0x9c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+                0x08001468                BSP_LED_Init
  .text.BSP_JOY_Init
-                0x08000a84      0x168 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
-                0x08000a84                BSP_JOY_Init
+                0x08001504      0x168 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+                0x08001504                BSP_JOY_Init
+ .text.BSP_LCD_GLASS_Init
+                0x0800166c       0x74 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                0x0800166c                BSP_LCD_GLASS_Init
+ .text.BSP_LCD_GLASS_BarLevelConfig
+                0x080016e0       0xf4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                0x080016e0                BSP_LCD_GLASS_BarLevelConfig
+ .text.BSP_LCD_GLASS_DisplayString
+                0x080017d4       0x5c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                0x080017d4                BSP_LCD_GLASS_DisplayString
+ .text.BSP_LCD_GLASS_Clear
+                0x08001830       0x14 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                0x08001830                BSP_LCD_GLASS_Clear
+ .text.LCD_MspInit
+                0x08001844      0x18c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.Convert  0x080019d0      0x190 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.WriteChar
+                0x08001b60      0x700 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .text.HAL_LCD_Init
+                0x08002260      0x178 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+                0x08002260                HAL_LCD_Init
+ .text.HAL_LCD_MspInit
+                0x080023d8       0x14 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+                0x080023d8                HAL_LCD_MspInit
+ .text.HAL_LCD_Write
+                0x080023ec       0xc0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+                0x080023ec                HAL_LCD_Write
+ .text.HAL_LCD_Clear
+                0x080024ac       0xb4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+                0x080024ac                HAL_LCD_Clear
+ .text.HAL_LCD_UpdateDisplayRequest
+                0x08002560       0x78 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+                0x08002560                HAL_LCD_UpdateDisplayRequest
+ .text.LCD_WaitForSynchro
+                0x080025d8       0x48 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+                0x080025d8                LCD_WaitForSynchro
+ .text.HAL_PWREx_GetVoltageRange
+                0x08002620       0x1c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+                0x08002620                HAL_PWREx_GetVoltageRange
+ .text.HAL_RCCEx_PeriphCLKConfig
+                0x0800263c      0x5c8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
+                0x0800263c                HAL_RCCEx_PeriphCLKConfig
+ .text.RCCEx_PLLSAI1_Config
+                0x08002c04      0x2a8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
+ .text.RCCEx_PLLSAI2_Config
+                0x08002eac      0x250 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .text.__libc_init_array
-                0x08000bec       0x50 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
-                0x08000bec                __libc_init_array
+                0x080030fc       0x50 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
+                0x080030fc                __libc_init_array
+ .text.memset   0x0800314c       0x9c c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
+                0x0800314c                memset
  .text.startup.register_fini
-                0x08000c3c       0x14 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x08000c50        0xc c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
-                0x08000c50                atexit
+                0x080031e8       0x14 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x080031fc        0xc c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
+                0x080031fc                atexit
  .text.__libc_fini_array
-                0x08000c5c       0x28 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
-                0x08000c5c                __libc_fini_array
+                0x08003208       0x28 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
+                0x08003208                __libc_fini_array
  .text.__register_exitproc
-                0x08000c84       0xa4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
-                0x08000c84                __register_exitproc
+                0x08003230       0xa4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
+                0x08003230                __register_exitproc
  *(.glue_7)
- .glue_7        0x08000d28        0x0 linker stubs
+ .glue_7        0x080032d4        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08000d28        0x0 linker stubs
+ .glue_7t       0x080032d4        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08000d28        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
+ .eh_frame      0x080032d4        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
  *(.init)
- .init          0x08000d28        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crti.o
-                0x08000d28                _init
- .init          0x08000d2c        0x8 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtn.o
+ .init          0x080032d4        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crti.o
+                0x080032d4                _init
+ .init          0x080032d8        0x8 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtn.o
  *(.fini)
- .fini          0x08000d34        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crti.o
-                0x08000d34                _fini
- .fini          0x08000d38        0x8 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtn.o
-                0x08000d40                . = ALIGN (0x8)
-                0x08000d40                _etext = .
+ .fini          0x080032e0        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crti.o
+                0x080032e0                _fini
+ .fini          0x080032e4        0x8 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtn.o
+                0x080032f0                . = ALIGN (0x8)
+ *fill*         0x080032ec        0x4 
+                0x080032f0                _etext = .
 
-.vfp11_veneer   0x08000d40        0x0
- .vfp11_veneer  0x08000d40        0x0 linker stubs
+.vfp11_veneer   0x080032f0        0x0
+ .vfp11_veneer  0x080032f0        0x0 linker stubs
 
-.v4_bx          0x08000d40        0x0
- .v4_bx         0x08000d40        0x0 linker stubs
+.v4_bx          0x080032f0        0x0
+ .v4_bx         0x080032f0        0x0 linker stubs
 
-.iplt           0x08000d40        0x0
- .iplt          0x08000d40        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
+.iplt           0x080032f0        0x0
+ .iplt          0x080032f0        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
 
-.rodata         0x08000d40       0x20
-                0x08000d40                . = ALIGN (0x8)
+.rodata         0x080032f0       0xd8
+                0x080032f0                . = ALIGN (0x8)
  *(.rodata)
- .rodata        0x08000d40       0x15 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
-                0x08000d40                LED_PIN
-                0x08000d44                JOY_PIN
-                0x08000d50                JOY_IRQn
+ .rodata        0x080032f0       0x1d src/joystick.o
+ *fill*         0x0800330d        0x3 
+ .rodata        0x08003310        0x7 src/main.o
+ *fill*         0x08003317        0x1 
+ .rodata        0x08003318       0x48 src/system_stm32l4xx.o
+                0x08003318                AHBPrescTable
+                0x08003328                APBPrescTable
+                0x08003330                MSIRangeTable
+ .rodata        0x08003360       0x15 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+                0x08003360                LED_PIN
+                0x08003364                JOY_PIN
+                0x08003370                JOY_IRQn
+ *fill*         0x08003375        0x3 
+ .rodata        0x08003378       0x48 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                0x08003378                CapLetterMap
+                0x080033ac                NumberMap
  *(.rodata*)
- *fill*         0x08000d55        0x3 
  .rodata.str1.4
-                0x08000d58        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
+                0x080033c0        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
                                   0x2 (size before relaxing)
  .rodata._global_impure_ptr
-                0x08000d5c        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
-                0x08000d5c                _global_impure_ptr
-                0x08000d60                . = ALIGN (0x8)
+                0x080033c4        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
+                0x080033c4                _global_impure_ptr
+                0x080033c8                . = ALIGN (0x8)
 
-.rel.dyn        0x08000d60        0x0
- .rel.iplt      0x08000d60        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
+.rel.dyn        0x080033c8        0x0
+ .rel.iplt      0x080033c8        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
 
-.ARM.extab      0x08000d60        0x0
-                0x08000d60                . = ALIGN (0x8)
+.ARM.extab      0x080033c8        0x0
+                0x080033c8                . = ALIGN (0x8)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08000d60                . = ALIGN (0x8)
+                0x080033c8                . = ALIGN (0x8)
 
-.ARM            0x08000d60        0x0
-                0x08000d60                . = ALIGN (0x8)
-                0x08000d60                __exidx_start = .
+.ARM            0x080033c8        0x0
+                0x080033c8                . = ALIGN (0x8)
+                0x080033c8                __exidx_start = .
  *(.ARM.exidx*)
-                0x08000d60                __exidx_end = .
-                0x08000d60                . = ALIGN (0x8)
+                0x080033c8                __exidx_end = .
+                0x080033c8                . = ALIGN (0x8)
 
-.preinit_array  0x08000d60        0x0
-                0x08000d60                . = ALIGN (0x8)
-                0x08000d60                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x080033c8        0x0
+                0x080033c8                . = ALIGN (0x8)
+                0x080033c8                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08000d60                PROVIDE (__preinit_array_end, .)
-                0x08000d60                . = ALIGN (0x8)
+                0x080033c8                PROVIDE (__preinit_array_end, .)
+                0x080033c8                . = ALIGN (0x8)
 
-.init_array     0x08000d60        0x8
-                0x08000d60                . = ALIGN (0x8)
-                0x08000d60                PROVIDE (__init_array_start, .)
+.init_array     0x080033c8        0x8
+                0x080033c8                . = ALIGN (0x8)
+                0x080033c8                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  .init_array.00000
-                0x08000d60        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
+                0x080033c8        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08000d64        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
-                0x08000d68                PROVIDE (__init_array_end, .)
-                0x08000d68                . = ALIGN (0x8)
+ .init_array    0x080033cc        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
+                0x080033d0                PROVIDE (__init_array_end, .)
+                0x080033d0                . = ALIGN (0x8)
 
-.fini_array     0x08000d68        0x8
-                0x08000d68                . = ALIGN (0x8)
-                0x08000d68                PROVIDE (__fini_array_start, .)
+.fini_array     0x080033d0        0x8
+                0x080033d0                . = ALIGN (0x8)
+                0x080033d0                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08000d68        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
-                0x08000d6c                PROVIDE (__fini_array_end, .)
-                0x08000d70                . = ALIGN (0x8)
- *fill*         0x08000d6c        0x4 
-                0x08000d70                _sidata = LOADADDR (.data)
+ .fini_array    0x080033d0        0x4 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
+                0x080033d4                PROVIDE (__fini_array_end, .)
+                0x080033d8                . = ALIGN (0x8)
+ *fill*         0x080033d4        0x4 
+                0x080033d8                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x458 load address 0x08000d70
+.data           0x20000000      0x458 load address 0x080033d8
                 0x20000000                . = ALIGN (0x8)
                 0x20000000                _sdata = .
  *(.data)
@@ -4185,21 +4645,23 @@ LOAD c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.
                 0x20000020                I2c1Timeout
                 0x20000024                I2c2Timeout
                 0x20000028                SpixTimeout
+ .data          0x2000002c        0x1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                0x2000002c                LCDBar
  *(.data*)
- *fill*         0x2000002c        0x4 
+ *fill*         0x2000002d        0x3 
  .data.impure_data
                 0x20000030      0x428 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
                 0x20000458                . = ALIGN (0x8)
                 0x20000458                _edata = .
 
-.jcr            0x20000458        0x0 load address 0x080011c8
+.jcr            0x20000458        0x0 load address 0x08003830
  .jcr           0x20000458        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
 
-.igot.plt       0x20000458        0x0 load address 0x080011c8
+.igot.plt       0x20000458        0x0 load address 0x08003830
  .igot.plt      0x20000458        0x0 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtbegin.o
                 0x20000458                . = ALIGN (0x4)
 
-.bss            0x20000458       0x20 load address 0x080011c8
+.bss            0x20000458       0x6c load address 0x08003830
                 0x20000458                _sbss = .
                 0x20000458                __bss_start__ = _sbss
  *(.bss)
@@ -4208,20 +4670,24 @@ LOAD c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.
  *(COMMON)
  COMMON         0x20000474        0x4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
                 0x20000474                uwTick
-                0x20000478                . = ALIGN (0x4)
-                0x20000478                _ebss = .
-                0x20000478                __bss_end__ = _ebss
+ COMMON         0x20000478       0x4c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                0x20000478                Digit
+                0x20000488                LCDHandle
+                0x200004c4                . = ALIGN (0x4)
+                0x200004c4                _ebss = .
+                0x200004c4                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000478      0x600 load address 0x080011c8
-                0x20000478                . = ALIGN (0x8)
-                0x20000478                PROVIDE (end, .)
+                0x200004c4      0x604 load address 0x08003830
+                0x200004c8                . = ALIGN (0x8)
+ *fill*         0x200004c4        0x4 
+                0x200004c8                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
-                0x20000678                . = (. + _Min_Heap_Size)
- *fill*         0x20000478      0x200 
-                0x20000a78                . = (. + _Min_Stack_Size)
- *fill*         0x20000678      0x400 
-                0x20000a78                . = ALIGN (0x8)
+                0x200006c8                . = (. + _Min_Heap_Size)
+ *fill*         0x200004c8      0x200 
+                0x20000ac8                . = (. + _Min_Stack_Size)
+ *fill*         0x200006c8      0x400 
+                0x20000ac8                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -4256,46 +4722,64 @@ LOAD c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.
  .ARM.attributes
                 0x0000023f       0x39 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
  .ARM.attributes
-                0x00000278       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
+                0x00000278       0x39 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
  .ARM.attributes
-                0x000002ac       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
+                0x000002b1       0x39 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
  .ARM.attributes
-                0x000002e0       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
+                0x000002ea       0x39 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
  .ARM.attributes
-                0x00000314       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
+                0x00000323       0x39 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
  .ARM.attributes
-                0x00000348       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
+                0x0000035c       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x0000037c       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
+                0x00000390       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
  .ARM.attributes
-                0x000003b0       0x22 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtn.o
+                0x000003c4       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000003f8       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x0000042c       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000460       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000494       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x000004c8       0x22 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtn.o
 OUTPUT(STM32L476G-Disco.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x601d
- .debug_info    0x00000000      0x10b src/joystick.o
- .debug_info    0x0000010b      0x6f9 src/main.o
- .debug_info    0x00000804      0x128 src/stm32l4xx_it.o
- .debug_info    0x0000092c      0x5ac src/system_stm32l4xx.o
- .debug_info    0x00000ed8       0x7e startup/startup_stm32l476xx.o
- .debug_info    0x00000f56      0x98f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
- .debug_info    0x000018e5      0xd28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
- .debug_info    0x0000260d      0x7e1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
- .debug_info    0x00002dee      0xf22 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
- .debug_info    0x00003d10     0x230d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+.debug_info     0x00000000     0x936b
+ .debug_info    0x00000000       0xe6 src/joystick.o
+ .debug_info    0x000000e6      0x724 src/main.o
+ .debug_info    0x0000080a      0x128 src/stm32l4xx_it.o
+ .debug_info    0x00000932      0x5ac src/system_stm32l4xx.o
+ .debug_info    0x00000ede       0x7e startup/startup_stm32l476xx.o
+ .debug_info    0x00000f5c      0x98f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+ .debug_info    0x000018eb      0xd28 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+ .debug_info    0x00002613      0x7e1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+ .debug_info    0x00002df4      0xf22 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
+ .debug_info    0x00003d16     0x230d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .debug_info    0x00006023      0xf7d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_info    0x00006fa0      0x514 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_info    0x000074b4      0x9fa D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+ .debug_info    0x00007eae     0x14bd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
 
-.debug_abbrev   0x00000000      0xefc
- .debug_abbrev  0x00000000       0x93 src/joystick.o
- .debug_abbrev  0x00000093      0x16b src/main.o
- .debug_abbrev  0x000001fe       0x6a src/stm32l4xx_it.o
- .debug_abbrev  0x00000268      0x125 src/system_stm32l4xx.o
- .debug_abbrev  0x0000038d       0x12 startup/startup_stm32l476xx.o
- .debug_abbrev  0x0000039f      0x1c1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
- .debug_abbrev  0x00000560      0x2b0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
- .debug_abbrev  0x00000810      0x1af D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
- .debug_abbrev  0x000009bf      0x28c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
- .debug_abbrev  0x00000c4b      0x2b1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+.debug_abbrev   0x00000000     0x16ea
+ .debug_abbrev  0x00000000       0x7b src/joystick.o
+ .debug_abbrev  0x0000007b      0x16b src/main.o
+ .debug_abbrev  0x000001e6       0x6a src/stm32l4xx_it.o
+ .debug_abbrev  0x00000250      0x125 src/system_stm32l4xx.o
+ .debug_abbrev  0x00000375       0x12 startup/startup_stm32l476xx.o
+ .debug_abbrev  0x00000387      0x1c1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+ .debug_abbrev  0x00000548      0x2b0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+ .debug_abbrev  0x000007f8      0x1af D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+ .debug_abbrev  0x000009a7      0x28c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
+ .debug_abbrev  0x00000c33      0x2b1 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .debug_abbrev  0x00000ee4      0x1f3 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_abbrev  0x000010d7      0x18c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_abbrev  0x00001263      0x222 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+ .debug_abbrev  0x00001485      0x265 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
 
-.debug_aranges  0x00000000      0x5d8
+.debug_aranges  0x00000000      0x8d8
  .debug_aranges
                 0x00000000       0x20 src/joystick.o
  .debug_aranges
@@ -4316,8 +4800,16 @@ OUTPUT(STM32L476G-Disco.elf elf32-littlearm)
                 0x00000350       0x88 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .debug_aranges
                 0x000003d8      0x200 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .debug_aranges
+                0x000005d8       0x98 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_aranges
+                0x00000670       0x68 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_aranges
+                0x000006d8      0x148 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+ .debug_aranges
+                0x00000820       0xb8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
 
-.debug_ranges   0x00000000      0x540
+.debug_ranges   0x00000000      0x800
  .debug_ranges  0x00000000       0x10 src/joystick.o
  .debug_ranges  0x00000010       0x28 src/main.o
  .debug_ranges  0x00000038       0x38 src/stm32l4xx_it.o
@@ -4328,150 +4820,171 @@ OUTPUT(STM32L476G-Disco.elf elf32-littlearm)
  .debug_ranges  0x00000290       0x48 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
  .debug_ranges  0x000002d8       0x78 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .debug_ranges  0x00000350      0x1f0 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .debug_ranges  0x00000540       0x88 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_ranges  0x000005c8       0x58 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_ranges  0x00000620      0x138 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+ .debug_ranges  0x00000758       0xa8 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
 
-.debug_macro    0x00000000    0x2d0f1
- .debug_macro   0x00000000      0x4d7 src/joystick.o
- .debug_macro   0x000004d7      0x8aa src/joystick.o
- .debug_macro   0x00000d81       0x10 src/joystick.o
- .debug_macro   0x00000d91      0x166 src/joystick.o
- .debug_macro   0x00000ef7       0x28 src/joystick.o
- .debug_macro   0x00000f1f       0x28 src/joystick.o
- .debug_macro   0x00000f47       0x22 src/joystick.o
- .debug_macro   0x00000f69       0x87 src/joystick.o
- .debug_macro   0x00000ff0       0x44 src/joystick.o
- .debug_macro   0x00001034       0xfd src/joystick.o
- .debug_macro   0x00001131       0x5e src/joystick.o
- .debug_macro   0x0000118f      0x1df src/joystick.o
- .debug_macro   0x0000136e       0x35 src/joystick.o
- .debug_macro   0x000013a3       0x50 src/joystick.o
- .debug_macro   0x000013f3      0xe66 src/joystick.o
- .debug_macro   0x00002259    0x1a13b src/joystick.o
- .debug_macro   0x0001c394       0x43 src/joystick.o
- .debug_macro   0x0001c3d7     0x359e src/joystick.o
- .debug_macro   0x0001f975       0x52 src/joystick.o
- .debug_macro   0x0001f9c7       0x35 src/joystick.o
- .debug_macro   0x0001f9fc       0x9c src/joystick.o
- .debug_macro   0x0001fa98       0x16 src/joystick.o
- .debug_macro   0x0001faae       0x97 src/joystick.o
- .debug_macro   0x0001fb45      0x30d src/joystick.o
- .debug_macro   0x0001fe52       0xfd src/joystick.o
- .debug_macro   0x0001ff4f       0x10 src/joystick.o
- .debug_macro   0x0001ff5f       0x52 src/joystick.o
- .debug_macro   0x0001ffb1       0x1f src/joystick.o
- .debug_macro   0x0001ffd0       0x43 src/joystick.o
- .debug_macro   0x00020013       0x20 src/joystick.o
- .debug_macro   0x00020033      0x187 src/joystick.o
- .debug_macro   0x000201ba       0x10 src/joystick.o
- .debug_macro   0x000201ca       0x1c src/joystick.o
- .debug_macro   0x000201e6       0x52 src/joystick.o
- .debug_macro   0x00020238       0x40 src/joystick.o
- .debug_macro   0x00020278       0x10 src/joystick.o
- .debug_macro   0x00020288       0x40 src/joystick.o
- .debug_macro   0x000202c8       0xd7 src/joystick.o
- .debug_macro   0x0002039f       0x16 src/joystick.o
- .debug_macro   0x000203b5      0x189 src/joystick.o
- .debug_macro   0x0002053e       0x57 src/joystick.o
- .debug_macro   0x00020595     0x1566 src/joystick.o
- .debug_macro   0x00021afb      0x59e src/joystick.o
- .debug_macro   0x00022099      0x148 src/joystick.o
- .debug_macro   0x000221e1      0x18b src/joystick.o
- .debug_macro   0x0002236c      0x25d src/joystick.o
- .debug_macro   0x000225c9      0x29c src/joystick.o
- .debug_macro   0x00022865      0x23a src/joystick.o
- .debug_macro   0x00022a9f      0x401 src/joystick.o
- .debug_macro   0x00022ea0      0x5c1 src/joystick.o
- .debug_macro   0x00023461      0x360 src/joystick.o
- .debug_macro   0x000237c1      0x263 src/joystick.o
- .debug_macro   0x00023a24       0xd5 src/joystick.o
- .debug_macro   0x00023af9       0x4d src/joystick.o
- .debug_macro   0x00023b46      0x153 src/joystick.o
- .debug_macro   0x00023c99       0xd9 src/joystick.o
- .debug_macro   0x00023d72       0xad src/joystick.o
- .debug_macro   0x00023e1f      0x367 src/joystick.o
- .debug_macro   0x00024186       0x10 src/joystick.o
- .debug_macro   0x00024196       0xe4 src/joystick.o
- .debug_macro   0x0002427a      0x305 src/joystick.o
- .debug_macro   0x0002457f       0x71 src/joystick.o
- .debug_macro   0x000245f0       0xb3 src/joystick.o
- .debug_macro   0x000246a3      0x202 src/joystick.o
- .debug_macro   0x000248a5       0x61 src/joystick.o
- .debug_macro   0x00024906       0x90 src/joystick.o
- .debug_macro   0x00024996       0x87 src/joystick.o
- .debug_macro   0x00024a1d      0x3e5 src/joystick.o
- .debug_macro   0x00024e02      0x272 src/joystick.o
- .debug_macro   0x00025074       0xff src/joystick.o
- .debug_macro   0x00025173      0x126 src/joystick.o
- .debug_macro   0x00025299      0x3dc src/joystick.o
- .debug_macro   0x00025675      0x2a3 src/joystick.o
- .debug_macro   0x00025918       0x6d src/joystick.o
- .debug_macro   0x00025985      0x321 src/joystick.o
- .debug_macro   0x00025ca6      0x4ce src/joystick.o
- .debug_macro   0x00026174       0xdd src/joystick.o
- .debug_macro   0x00026251      0x447 src/joystick.o
- .debug_macro   0x00026698      0x398 src/joystick.o
- .debug_macro   0x00026a30      0x22b src/joystick.o
- .debug_macro   0x00026c5b      0x34f src/joystick.o
- .debug_macro   0x00026faa      0x2e2 src/joystick.o
- .debug_macro   0x0002728c      0x14c src/joystick.o
- .debug_macro   0x000273d8      0x9c6 src/joystick.o
- .debug_macro   0x00027d9e      0x1df src/joystick.o
- .debug_macro   0x00027f7d      0x46a src/joystick.o
- .debug_macro   0x000283e7      0x535 src/joystick.o
- .debug_macro   0x0002891c       0x44 src/joystick.o
- .debug_macro   0x00028960      0x241 src/joystick.o
- .debug_macro   0x00028ba1       0x31 src/joystick.o
- .debug_macro   0x00028bd2      0x256 src/joystick.o
- .debug_macro   0x00028e28       0x10 src/joystick.o
- .debug_macro   0x00028e38      0x248 src/joystick.o
- .debug_macro   0x00029080      0x12f src/joystick.o
- .debug_macro   0x000291af       0x89 src/joystick.o
- .debug_macro   0x00029238      0x1d1 src/joystick.o
- .debug_macro   0x00029409       0xa5 src/joystick.o
- .debug_macro   0x000294ae       0x68 src/joystick.o
- .debug_macro   0x00029516      0x31d src/joystick.o
- .debug_macro   0x00029833      0x456 src/joystick.o
- .debug_macro   0x00029c89      0x4ce src/main.o
- .debug_macro   0x0002a157      0x462 src/main.o
- .debug_macro   0x0002a5b9      0x4d8 src/stm32l4xx_it.o
- .debug_macro   0x0002aa91      0x4cc src/system_stm32l4xx.o
- .debug_macro   0x0002af5d      0x513 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
- .debug_macro   0x0002b470      0x8a4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
- .debug_macro   0x0002bd14      0x4c5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
- .debug_macro   0x0002c1d9      0x504 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
- .debug_macro   0x0002c6dd      0x507 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
- .debug_macro   0x0002cbe4      0x50d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+.debug_macro    0x00000000    0x2ec87
+ .debug_macro   0x00000000      0x4ea src/joystick.o
+ .debug_macro   0x000004ea      0x8aa src/joystick.o
+ .debug_macro   0x00000d94       0x10 src/joystick.o
+ .debug_macro   0x00000da4      0x166 src/joystick.o
+ .debug_macro   0x00000f0a       0x28 src/joystick.o
+ .debug_macro   0x00000f32       0x28 src/joystick.o
+ .debug_macro   0x00000f5a       0x22 src/joystick.o
+ .debug_macro   0x00000f7c       0x87 src/joystick.o
+ .debug_macro   0x00001003       0x44 src/joystick.o
+ .debug_macro   0x00001047       0xfd src/joystick.o
+ .debug_macro   0x00001144       0x5e src/joystick.o
+ .debug_macro   0x000011a2      0x1df src/joystick.o
+ .debug_macro   0x00001381       0x35 src/joystick.o
+ .debug_macro   0x000013b6       0x50 src/joystick.o
+ .debug_macro   0x00001406      0xe66 src/joystick.o
+ .debug_macro   0x0000226c    0x1a13b src/joystick.o
+ .debug_macro   0x0001c3a7       0x43 src/joystick.o
+ .debug_macro   0x0001c3ea     0x359e src/joystick.o
+ .debug_macro   0x0001f988       0x52 src/joystick.o
+ .debug_macro   0x0001f9da       0x35 src/joystick.o
+ .debug_macro   0x0001fa0f       0x9c src/joystick.o
+ .debug_macro   0x0001faab       0x16 src/joystick.o
+ .debug_macro   0x0001fac1       0x97 src/joystick.o
+ .debug_macro   0x0001fb58      0x30d src/joystick.o
+ .debug_macro   0x0001fe65       0xfd src/joystick.o
+ .debug_macro   0x0001ff62       0x10 src/joystick.o
+ .debug_macro   0x0001ff72       0x52 src/joystick.o
+ .debug_macro   0x0001ffc4       0x1f src/joystick.o
+ .debug_macro   0x0001ffe3       0x43 src/joystick.o
+ .debug_macro   0x00020026       0x20 src/joystick.o
+ .debug_macro   0x00020046      0x187 src/joystick.o
+ .debug_macro   0x000201cd       0x10 src/joystick.o
+ .debug_macro   0x000201dd       0x1c src/joystick.o
+ .debug_macro   0x000201f9       0x52 src/joystick.o
+ .debug_macro   0x0002024b       0x40 src/joystick.o
+ .debug_macro   0x0002028b       0x10 src/joystick.o
+ .debug_macro   0x0002029b       0x40 src/joystick.o
+ .debug_macro   0x000202db       0xd7 src/joystick.o
+ .debug_macro   0x000203b2       0x16 src/joystick.o
+ .debug_macro   0x000203c8      0x189 src/joystick.o
+ .debug_macro   0x00020551       0x57 src/joystick.o
+ .debug_macro   0x000205a8     0x1566 src/joystick.o
+ .debug_macro   0x00021b0e      0x59e src/joystick.o
+ .debug_macro   0x000220ac      0x148 src/joystick.o
+ .debug_macro   0x000221f4      0x18b src/joystick.o
+ .debug_macro   0x0002237f      0x25d src/joystick.o
+ .debug_macro   0x000225dc      0x29c src/joystick.o
+ .debug_macro   0x00022878      0x23a src/joystick.o
+ .debug_macro   0x00022ab2      0x401 src/joystick.o
+ .debug_macro   0x00022eb3      0x5c1 src/joystick.o
+ .debug_macro   0x00023474      0x360 src/joystick.o
+ .debug_macro   0x000237d4      0x263 src/joystick.o
+ .debug_macro   0x00023a37       0xd5 src/joystick.o
+ .debug_macro   0x00023b0c       0x4d src/joystick.o
+ .debug_macro   0x00023b59      0x153 src/joystick.o
+ .debug_macro   0x00023cac       0xd9 src/joystick.o
+ .debug_macro   0x00023d85       0xad src/joystick.o
+ .debug_macro   0x00023e32      0x367 src/joystick.o
+ .debug_macro   0x00024199       0x10 src/joystick.o
+ .debug_macro   0x000241a9       0xe4 src/joystick.o
+ .debug_macro   0x0002428d      0x305 src/joystick.o
+ .debug_macro   0x00024592       0x71 src/joystick.o
+ .debug_macro   0x00024603       0xb3 src/joystick.o
+ .debug_macro   0x000246b6      0x202 src/joystick.o
+ .debug_macro   0x000248b8       0x61 src/joystick.o
+ .debug_macro   0x00024919       0x90 src/joystick.o
+ .debug_macro   0x000249a9       0x87 src/joystick.o
+ .debug_macro   0x00024a30      0x3e5 src/joystick.o
+ .debug_macro   0x00024e15      0x272 src/joystick.o
+ .debug_macro   0x00025087       0xff src/joystick.o
+ .debug_macro   0x00025186      0x126 src/joystick.o
+ .debug_macro   0x000252ac      0x3dc src/joystick.o
+ .debug_macro   0x00025688      0x2a3 src/joystick.o
+ .debug_macro   0x0002592b       0x6d src/joystick.o
+ .debug_macro   0x00025998      0x321 src/joystick.o
+ .debug_macro   0x00025cb9      0x4ce src/joystick.o
+ .debug_macro   0x00026187       0xdd src/joystick.o
+ .debug_macro   0x00026264      0x447 src/joystick.o
+ .debug_macro   0x000266ab      0x398 src/joystick.o
+ .debug_macro   0x00026a43      0x22b src/joystick.o
+ .debug_macro   0x00026c6e      0x34f src/joystick.o
+ .debug_macro   0x00026fbd      0x2e2 src/joystick.o
+ .debug_macro   0x0002729f      0x14c src/joystick.o
+ .debug_macro   0x000273eb      0x9c6 src/joystick.o
+ .debug_macro   0x00027db1      0x1df src/joystick.o
+ .debug_macro   0x00027f90      0x46a src/joystick.o
+ .debug_macro   0x000283fa      0x535 src/joystick.o
+ .debug_macro   0x0002892f       0x44 src/joystick.o
+ .debug_macro   0x00028973      0x241 src/joystick.o
+ .debug_macro   0x00028bb4       0x31 src/joystick.o
+ .debug_macro   0x00028be5      0x256 src/joystick.o
+ .debug_macro   0x00028e3b       0x10 src/joystick.o
+ .debug_macro   0x00028e4b      0x248 src/joystick.o
+ .debug_macro   0x00029093      0x12f src/joystick.o
+ .debug_macro   0x000291c2       0x89 src/joystick.o
+ .debug_macro   0x0002924b      0x1d1 src/joystick.o
+ .debug_macro   0x0002941c       0xa5 src/joystick.o
+ .debug_macro   0x000294c1       0x68 src/joystick.o
+ .debug_macro   0x00029529      0x31d src/joystick.o
+ .debug_macro   0x00029846      0x456 src/joystick.o
+ .debug_macro   0x00029c9c      0x7c1 src/joystick.o
+ .debug_macro   0x0002a45d      0x4e1 src/main.o
+ .debug_macro   0x0002a93e      0x462 src/main.o
+ .debug_macro   0x0002ada0      0x4d8 src/stm32l4xx_it.o
+ .debug_macro   0x0002b278      0x4cc src/system_stm32l4xx.o
+ .debug_macro   0x0002b744      0x513 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+ .debug_macro   0x0002bc57      0x8a4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+ .debug_macro   0x0002c4fb      0x4c5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+ .debug_macro   0x0002c9c0      0x504 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+ .debug_macro   0x0002cec4      0x507 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
+ .debug_macro   0x0002d3cb      0x50d D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .debug_macro   0x0002d8d8      0x500 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_macro   0x0002ddd8      0x4cb D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_macro   0x0002e2a3      0x4e9 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+ .debug_macro   0x0002e78c      0x4fb D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
 
-.debug_line     0x00000000     0x7e1f
- .debug_line    0x00000000      0xc73 src/joystick.o
- .debug_line    0x00000c73      0xc6b src/main.o
- .debug_line    0x000018de      0xccb src/stm32l4xx_it.o
- .debug_line    0x000025a9      0xbf2 src/system_stm32l4xx.o
- .debug_line    0x0000319b       0x7f startup/startup_stm32l476xx.o
- .debug_line    0x0000321a      0xddd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
- .debug_line    0x00003ff7      0xe90 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
- .debug_line    0x00004e87      0xd77 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
- .debug_line    0x00005bfe      0xfa9 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
- .debug_line    0x00006ba7     0x1278 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+.debug_line     0x00000000     0xbdee
+ .debug_line    0x00000000      0xc9b src/joystick.o
+ .debug_line    0x00000c9b      0xc92 src/main.o
+ .debug_line    0x0000192d      0xccb src/stm32l4xx_it.o
+ .debug_line    0x000025f8      0xbf2 src/system_stm32l4xx.o
+ .debug_line    0x000031ea       0x7f startup/startup_stm32l476xx.o
+ .debug_line    0x00003269      0xddd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+ .debug_line    0x00004046      0xe90 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+ .debug_line    0x00004ed6      0xd77 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+ .debug_line    0x00005c4d      0xfa9 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
+ .debug_line    0x00006bf6     0x1278 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .debug_line    0x00007e6e      0xec5 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_line    0x00008d33      0xd36 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_line    0x00009a69      0xf7a D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+ .debug_line    0x0000a9e3     0x140b D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
 
-.debug_str      0x00000000   0x121939
- .debug_str     0x00000000   0x11ee30 src/joystick.o
-                             0x11f0df (size before relaxing)
- .debug_str     0x0011ee30      0x522 src/main.o
-                             0x11f6ee (size before relaxing)
- .debug_str     0x0011f352       0x8f src/stm32l4xx_it.o
+.debug_str      0x00000000   0x125079
+ .debug_str     0x00000000   0x12176d src/joystick.o
+                             0x121a1c (size before relaxing)
+ .debug_str     0x0012176d      0x594 src/main.o
+                             0x12209d (size before relaxing)
+ .debug_str     0x00121d01       0x8f src/stm32l4xx_it.o
                              0x11f120 (size before relaxing)
- .debug_str     0x0011f3e1      0x1c0 src/system_stm32l4xx.o
+ .debug_str     0x00121d90      0x1c0 src/system_stm32l4xx.o
                              0x11d405 (size before relaxing)
- .debug_str     0x0011f5a1      0x5de D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
+ .debug_str     0x00121f50      0x5cf D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal.o)
                              0x11de81 (size before relaxing)
- .debug_str     0x0011fb7f      0x304 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
+ .debug_str     0x0012251f      0x2fd D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_cortex.o)
                              0x11dbca (size before relaxing)
- .debug_str     0x0011fe83      0x2da D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
+ .debug_str     0x0012281c      0x2d4 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
                              0x11d682 (size before relaxing)
- .debug_str     0x0012015d      0x59c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
+ .debug_str     0x00122af0      0x59c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
                              0x11d9f8 (size before relaxing)
- .debug_str     0x001206f9     0x1240 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .debug_str     0x0012308c     0x1230 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
                              0x120b22 (size before relaxing)
+ .debug_str     0x001242bc      0x507 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+                             0x122558 (size before relaxing)
+ .debug_str     0x001247c3      0x112 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+                             0x11d47c (size before relaxing)
+ .debug_str     0x001248d5      0x414 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+                             0x11d8cb (size before relaxing)
+ .debug_str     0x00124ce9      0x390 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
+                             0x11daff (size before relaxing)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e src/joystick.o
@@ -4484,8 +4997,12 @@ OUTPUT(STM32L476G-Disco.elf elf32-littlearm)
  .comment       0x0000006e       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
  .comment       0x0000006e       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .comment       0x0000006e       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
+ .comment       0x0000006e       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .comment       0x0000006e       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .comment       0x0000006e       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+ .comment       0x0000006e       0x6f D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
 
-.debug_frame    0x00000000     0x16ac
+.debug_frame    0x00000000     0x22ac
  .debug_frame   0x00000000       0x34 src/joystick.o
  .debug_frame   0x00000034       0x94 src/main.o
  .debug_frame   0x000000c8       0xb8 src/stm32l4xx_it.o
@@ -4495,8 +5012,13 @@ OUTPUT(STM32L476G-Disco.elf elf32-littlearm)
  .debug_frame   0x000009f4      0x14c D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_gpio.o)
  .debug_frame   0x00000b40      0x204 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc.o)
  .debug_frame   0x00000d44      0x864 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery.o)
- .debug_frame   0x000015a8       0x2c c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
- .debug_frame   0x000015d4       0x50 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x00001624       0x20 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
- .debug_frame   0x00001644       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
- .debug_frame   0x00001678       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x000015a8      0x244 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l476g_discovery_glass_lcd.o)
+ .debug_frame   0x000017ec      0x188 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_lcd.o)
+ .debug_frame   0x00001974      0x524 D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_pwr_ex.o)
+ .debug_frame   0x00001e98      0x2dc D:\work\projects\eclipse_projects\stm32l476g-disco_hal_lib\Debug\libstm32l476g-disco_hal_lib.a(stm32l4xx_hal_rcc_ex.o)
+ .debug_frame   0x00002174       0x2c c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
+ .debug_frame   0x000021a0       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
+ .debug_frame   0x000021d4       0x50 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00002224       0x20 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
+ .debug_frame   0x00002244       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
+ .debug_frame   0x00002278       0x34 c:/program files/eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.12.0.201611241417/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)

@@ -72,7 +72,9 @@ src/joystick.o: ../src/joystick.c \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l4xx_hal_pcd.h \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l4xx_ll_usb.h \
  D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h \
- D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l4xx_hal_hcd.h
+ D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l4xx_hal_hcd.h \
+ D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery_glass_lcd.h \
+ D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h
 
 D:/work/projects/eclipse_projects/STM32L476G-Disco/inc/joystick.h:
 
@@ -221,3 +223,7 @@ D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l
 D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h:
 
 D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/HAL_Driver/Inc/stm32l4xx_hal_hcd.h:
+
+D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery_glass_lcd.h:
+
+D:/work/projects/eclipse_projects/stm32l476g-disco_hal_lib/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h:
